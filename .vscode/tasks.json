@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rust: Build and Run Current File",
+      "type": "shell",
+      "command": "rustc",
+      "args": [
+        "${file}",
+        "-o",
+        "${workspaceFolder}/target/current_file",
+        "&&",
+        "${workspaceFolder}/target/current_file"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
