@@ -35,6 +35,10 @@
         "-m",
         "chore: solve exercise [${relativeFile}]"
       ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "presentation": {
         "reveal": "always",
         "panel": "shared"
