@@ -21,6 +21,25 @@
         "panel": "shared"
       },
       "problemMatcher": []
+    },
+    {
+      "label": "Git: Commit Exercise Solution",
+      "type": "shell",
+      "command": "git",
+      "args": [
+        "add",
+        "${file}",
+        "&&",
+        "git",
+        "commit",
+        "-m",
+        "chore: solve exercise [${relativeFile}]"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
     }
   ]
 }
