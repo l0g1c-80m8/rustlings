@@ -14,7 +14,7 @@
       ],
       "group": {
         "kind": "build",
-        "isDefault": true
+        "isDefault": false
       },
       "presentation": {
         "reveal": "always",
@@ -37,7 +37,29 @@
       ],
       "group": {
         "kind": "build",
-        "isDefault": true
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rust: Build and Run Tests",
+      "type": "shell",
+      "command": "rustc",
+      "args": [
+        "--test",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/target/current_test",
+        "&&",
+        "${workspaceFolder}/target/current_test"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
       },
       "presentation": {
         "reveal": "always",
